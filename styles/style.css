@@ -1,6 +1,442 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
+    color: #131313;
+}
+
+/* Default Styles */
+.btn .primary-button {
+    background: #FF900E;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 2px solid #FF900E;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.btn .primary-button:hover {
+    background: transparent;
+    color: #FF900E;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+
+.section-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+/* Header Styles */
+header {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 3% 5% 2% 5%;
+}
+
+header .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand-logo {
+    font-weight: 700;
+    font-size: 45px;
+    margin: 0;
+    cursor: pointer;
+}
+
+header .nav-bar .menu-bar {
+    display: flex;
+}
+
+header .menu-bar .menu-item {
+    list-style: none;
+    margin-left: 35px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+header .menu-bar .menu-item:hover {
+    color: #FF900E;
+}
+
+header .banner {
+    width: 100%;
+    margin-top: 100px;
+}
+
+header .banner-info {
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+header .banner-info .banner-title {
+    font-weight: 700;
+    font-size: 64px;
+}
+
+header .banner-info .banner-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin: 30px 0;
+}
+
+header .banner .banner-img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* main styles */
+main {
+    padding: 0 5%;
+}
+
+/* Quick List of Feature Section Styles */
+.quick-list-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 70px;
+    padding: 5%;
+}
+
+.quick-list-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quick-list-img img {
+    width: 100%;
+}
+
+.quick-list-section .section-title small {
+    font-weight: 500;
+    color: #727272;
+}
+
+.quick-list-section .section-title span {
+    color: #FF900E;
+    display: block;
+}
+
+/* feature-section styles */
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 55px;
+    grid-template-areas: 'feature-left feature-right';
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.feature-section .feature-left {
+    grid-area: feature-left;
+}
+
+.feature-section .feature-left .section-title {
+    border-left: 4px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features {
+    padding: 30px;
+    box-shadow: 2px 2px 21px #d3d3d36b;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.features:hover {
+    border-left: 4px solid #FF900E;
+}
+
+.features h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.features .section-description {
+    margin-bottom: 0;
+}
+
+.feature-right {
+    grid-area: feature-right;
+}
+
+.feature-right .btn {
+    margin-top: -100px;
+    margin-left: -90px;
+    position: relative;
+}
+
+.feature-right .btn .primary-button {
+    transition: .4s ease-in-out;
+}
+
+.feature-right .btn .primary-button:hover {
+    background: #FF900E;
+    margin-top: -115px;
+}
+
+.feature-right .btn .primary-button {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+
+.feature-right .btn .primary-button span {
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.feature-right {
+    padding-left: 90px;
+}
+
+.feature-right img {
+    width: 100%;
+}
+
+/* Facts Styles */
+.fact-section {
+    margin-bottom: 130px;
+}
+
+.fact-section .section-description {
+    max-width: 540px;
+}
+
+.fact-section .fact-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.fact-section .fact-items .fact {
+    text-align: center;
+    border: 1px solid #FF900E;
+    width: 242px;
+    height: 240px;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 45px 35px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fact-section .fact-items .fact:hover {
+    margin-top: -20px;
+    background-color: #FF900E;
+}
+
+.fact h2 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    margin: 10px 0 5px 0;
+    transition: .3s;
+}
+
+.fact-section .fact-items .fact:hover h2 {
+    color: #FFFFFF;
+}
+
+.fact p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+    transition: .3s;
+}
+
+.fact-section .fact-items .fact:hover p {
+    color: #FFFFFF;
+}
+
+/* sponsors */
+.sponsor-section {
+    text-align: center;
+}
+
+.sponsor-section .section-description {
+    max-width: 542px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.sponsor-section .sponsor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    filter: grayscale(100%);
+    flex-wrap: wrap;
+}
+
+.sponsor-section .sponsor img {
+    margin: 30px;
+}
+
+
+/* Footer Section */
+footer {
+    margin: 130px 5% 50px 5%;
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #424242;
+}
+
+/* For Responsive Design */
+@media screen and (max-width: 576px) {
+    header .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .nav-bar .brand-logo {
+        font-size: 40px;
+    }
+
+    header .nav-bar .menu-bar {
+        flex-direction: column;
+    }
+
+    header .menu-bar .menu-item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header .banner-info {
+        width: 100%;
+    }
+
+    header .banner-info .banner-title {
+        font-size: 50px;
+    }
+
+    .quick-list-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quick-list-section {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        text-align: center;
+    }
+
+    .quick-list-section .section-title span {
+        display: inline;
+    }
+
+    .feature-section {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'feature-right'
+            'feature-left';
+        row-gap: 30px;
+        margin-top: 50px;
+    }
+
+    .feature-right {
+        padding-left: 0;
+    }
+
+    .feature-right .btn {
+        margin-top: 10px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .feature-right .btn .primary-button:hover {
+        background: #FF900E;
+        margin-top: 0;
+    }
+    .fact-section .fact-items .fact:hover {
+        margin: 15px;
+        background-color: #FF900E;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header .nav-bar {
+        flex-direction: column;
+    }
+
+    header .brand-logo {
+        margin-bottom: 10px;
+    }
+
+    header .menu-bar .menu-item:first-child {
+        margin-left: 0;
+    }
+
+    .quick-list-section {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        text-align: center;
+    }
+
+    .quick-list-section .section-title span {
+        display: inline;
+    }
+
+    .feature-section {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'feature-right'
+            'feature-left';
+        row-gap: 30px;
+        margin-top: 50px;
+    }
+
+    .feature-right {
+        padding-left: 0;
+    }
+
+    .feature-right .btn {
+        margin-top: 10px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .feature-right .btn .primary-button:hover {
+        background: #FF900E;
+        margin-top: 0;
+    }
+    .fact-section .fact-items .fact:hover {
+        margin: 15px;
+        background-color: #FF900E;
+    }
 }
